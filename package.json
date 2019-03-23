@@ -1,0 +1,45 @@
+{
+  "name": "gist-mirror",
+  "version": "1.0.0",
+  "description": "Mirror files or directories in a Github repo to a gist.",
+  "main": "dist/gist-mirror.js",
+  "bin": {
+    "gist-mirror": "dist/gist-mirror.js"
+  },
+  "scripts": {
+    "watch-build": "npm run build -- -w",
+    "build": "tsc -p ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Xyfir/gist-mirror.git"
+  },
+  "keywords": [
+    "github",
+    "gist",
+    "repo",
+    "repository",
+    "mirror",
+    "clone",
+    "reflect"
+  ],
+  "author": "Xyfir, LLC <contact@xyfir.com> (https://www.xyfir.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Xyfir/gist-mirror/issues"
+  },
+  "homepage": "https://github.com/Xyfir/gist-mirror#readme",
+  "prettier": {
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "@types/glob": "^7.1.1",
+    "@types/node": "^11.11.6",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "glob": "^7.1.3"
+  }
+}
