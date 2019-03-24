@@ -51,6 +51,15 @@ interface GistMirrorConfig {
     // Clone gist
     await exec(`git clone -q git@gist.github.com:${id}.git`);
 
+    // Wipe gist
+    const gistFiles = await glob(`${id}/**`);
+    console.log('Wiping gist');
+    for (let filePath of gistFiles.slice(1)) {
+      const file = basename(filePath);
+      console.log(`\t${file}`);
+      await remove(resolve(gistDir, file));
+    }
+
     // Copy in files and overwrite existing
     console.log('Copying files');
     for (let filePath of filesPaths) {
