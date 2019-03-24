@@ -1,7 +1,7 @@
 {
   "name": "gist-mirror",
   "version": "1.0.0",
-  "description": "Mirror files or directories in a Github repo to a gist.",
+  "description": "Mirror files from a local repository to a Github gist.",
   "main": "dist/gist-mirror.js",
   "bin": {
     "gist-mirror": "dist/gist-mirror.js"

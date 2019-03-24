@@ -74,5 +74,3 @@ Github and git will need to be configured to use SSH and the appropriate credent
 The gist will be cloned to and deleted from the current working directory. Meaning, don't keep a local copy of your gist in the same directory you run `gist-mirror` from because it'll be deleted.
 
 Due to gists not having folders, if your glob patterns match multiple files with the same name in different directories, the last one found will be used.
-
-If a file is not in the `files` config array but it exists in the gist, it will not be removed.
